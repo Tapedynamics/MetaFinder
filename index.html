@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con Pulsante</title>
+    <style>
+        /* Imposta il corpo e l'html per occupare l'intera altezza e larghezza della finestra */
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Usa Flexbox per centrare il contenuto sia verticalmente che orizzontalmente */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9; /* Un colore di sfondo neutro e moderno */
+        }
+
+        /* Stile del contenitore del pulsante (il link) */
+        .link-pulsante {
+            text-decoration: none; /* Rimuove la sottolineatura dal link */
+        }
+
+        /* Stile del pulsante */
+        .pulsante-cercati {
+            padding: 40px 80px; /* Spaziatura interna aumentata per un pulsante molto più grande */
+            font-size: 2.2rem;    /* Dimensione del testo aumentata notevolmente */
+            font-weight: 700;
+            color: #ffffff;
+            background: linear-gradient(45deg, #007BFF, #0056b3); /* Gradiente per un look moderno */
+            border: none;
+            border-radius: 20px;  /* Bordi più arrotondati per un look più morbido */
+            cursor: pointer;     /* Cursore a forma di mano per indicare che è cliccabile */
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transizione fluida */
+            box-shadow: 0 5px 20px rgba(0, 123, 255, 0.35); /* Ombra per dare profondità */
+            text-align: center;
+        }
+
+        /* Effetto al passaggio del mouse: il pulsante si solleva leggermente e l'ombra si accentua */
+        .pulsante-cercati:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.45);
+        }
+
+        /* Effetto alla pressione del pulsante */
+        .pulsante-cercati:active {
+            transform: translateY(1px);
+            box-shadow: 0 3px 15px rgba(0, 123, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+      Questo è il link che contiene il pulsante.
+      Per cambiare la destinazione, modifica l'attributo href="...".
+      Ad esempio, per puntare a Google, scrivi: href="https://www.google.com"
+    -->
+    <a href="INSERISCI QUI IL TUO LINK" class="link-pulsante">
+        <button class="pulsante-cercati">
+            TROVA LE TUE FOTO
+        </button>
+    </a>
+
+</body>
+</html>
